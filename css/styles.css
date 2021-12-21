@@ -4,8 +4,8 @@
   --tittle-text-color: #212121;
   --text-primery: #757575;
 
-  --primery-font: 'Roboto';
-  --secondary-font: 'Raleway';
+  --primery-font: "Roboto";
+  --secondary-font: "Raleway";
 }
 
 body {
@@ -161,7 +161,10 @@ address {
 
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -191,6 +194,13 @@ address {
   letter-spacing: 0.06em;
   background-color: var(--theme-color);
   color: #ffffff;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 528px;
+  height: 581px;
 }
 /*============section articles==========*/
 
