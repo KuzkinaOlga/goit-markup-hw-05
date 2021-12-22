@@ -43,10 +43,10 @@
         <section class="section-order section-hero">
         <div class="container">
             <h1 class="section-order-hero">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button-order">Заказать услугу</button>
+            <button data-modal-open type="button" class="button-order">Заказать услугу</button>
  
     </div>
-    <div class="backdrop"></div>
+
 
         </section>
     <!-------articles------>
@@ -97,10 +97,26 @@
         <div class="container aboutus">
         <h2 class="section-title-aboutus">Чем мы занимаемся</h2>
         <ul class="list-aboutus">
-            <li class="item"><img src="./images/img.jpg" alt="изображение работы на клавиатуре" width="370"></li>
-            <li class="item"><img src="./images/img1.jpg" alt="изображение телефона" width="370"></li>
-            <li class="item"><img src="./images/img2.jpg" alt="изображениеipad" width="370"></li>
-        </ul>
+            <li class="item">
+                <div class="image-position">
+                <img src="./images/img.jpg" alt="изображение работы на клавиатуре" width="370">
+                <p class="description description-name">Десктопные приложения</p>
+                </div>
+            </li>
+            
+            <li class="item">
+                <div class="image-position">
+                <img src="./images/img1.jpg" alt="изображение телефона" width="370">
+                <p class="description description-name">Мобильные приложения</p>
+                </div>
+                </li>
+            <li class="item">
+                <div class="image-position">
+                <img src="./images/img2.jpg" alt="изображениеipad" width="370">
+                <p class="description description-name">Дизайнерские решения</p>
+                </div>
+                </li>
+            </ul>
         </div>
     </section>
     <!---------our team------->
@@ -305,6 +321,12 @@
         </div>
     </div>
     </footer>
-<script src="./js/modal.js"></script>
+    <div class="backdrop is-hidden data-modal">
+        <div class="modal">
+            <button data-modal-close>close</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    
 </body>
 </html>
