@@ -207,6 +207,7 @@ address {
   background-color: var(--theme-color);
   color: #ffffff;
 }
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -216,8 +217,8 @@ address {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
   pointer-events: none;
 }
 .modal {
@@ -229,6 +230,8 @@ address {
   width: 528px;
   height: 581px;
   background-color: #ffffff;
+}
+.button-modal {
 }
 /*============section articles==========*/
 
