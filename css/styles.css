@@ -212,13 +212,14 @@ address {
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 1;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .backdrop.is-hidden {
-  visibility: visible;
-  opacity: 1;
+  visibility: hidden;
+  opacity: 0;
   pointer-events: none;
 }
 .modal {
@@ -232,14 +233,28 @@ address {
   background-color: #ffffff;
 }
 .button-modal {
- 
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin-top: 8px;
+  margin-right: 8px;
+  background-color: var(--background-color);
+  color: var(--text-primery);
 }
 .close-black {
-  position: absolute;
   top: 0;
   right: 0;
   width: 11px;
   height: 11px;
+}
+.button-modal:hover .button-modal:focus {
+  color: var(--theme-color);
+  fill: var(--theme-color);
 }
 /*============section articles==========*/
 
@@ -500,27 +515,20 @@ address {
 .item-thumb:hover::before {
   opacity: 1;
 }
-.content:hover {
+.content-hover .content:hover {
+  opacity: 1;
 }
 .item-thumb {
   position: relative;
 }
-.item-thumb::before {
-  display: inline-block;
-  content: "";
+
+.content {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-
-  opacity: 0;
-}
-.content {
-  position: absolute;
-  top: 0;
-  left: 0;
   padding-top: 63px;
   padding-left: 24px;
   padding-bottom: 63px;
