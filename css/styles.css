@@ -84,7 +84,7 @@ address {
   letter-spacing: 0.02em;
   color: var(--tittle-text-color);
   text-decoration: none;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav-link:hover,
 .site-nav-link:focus {
@@ -97,8 +97,7 @@ address {
   content: "";
   display: block;
   position: absolute;
-  top: 30px;
-  bottom: auto;
+  bottom: -35px;
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -143,7 +142,8 @@ address {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--text-primery);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .linkbox-link:hover,
 .linkbox-link:focus {
@@ -219,7 +219,8 @@ address {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -239,7 +240,8 @@ address {
   height: 581px;
   background-color: #ffffff;
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-modal {
   position: absolute;
@@ -408,7 +410,8 @@ address {
   border-radius: 50%;
   background-color: #fff;
   color: #afb1b8;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social {
 }
@@ -464,12 +467,14 @@ address {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-logo {
   width: 106px;
   height: 60px;
   fill: currentColor;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-item:hover,
 .link-item:focus {
@@ -500,8 +505,12 @@ address {
 
   background-color: #f5f4fa;
   color: #212121;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-list > .item:not(:last-child) {
   margin-right: 8px;
@@ -578,6 +587,7 @@ address {
 .photo-list > .item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transform: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .photo-list > .item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
@@ -676,7 +686,6 @@ address {
   width: 20px;
   height: 20px;
   fill: white;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-footer {
   display: flex;
@@ -687,6 +696,7 @@ address {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bag-link {
   width: 44px;
