@@ -550,6 +550,9 @@ address {
   background-color: var(--theme-color);
   opacity: 0;
 }
+.content-hover {
+  display: block;
+}
 .content-hover .content:hover {
   opacity: 1;
 }
@@ -583,8 +586,8 @@ address {
   transform: translateY(0);
 }
 
-.photo-list > .item:hover,
-.photo-list > .item:focus {
+.photo-list > .content-hover:hover,
+.photo-list > .content-hover:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transform: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
